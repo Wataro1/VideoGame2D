@@ -17,12 +17,12 @@ public class spaw2 : MonoBehaviour
     void Update()
     {
         tiempo = tiempo + Time.deltaTime;
-        if (tiempo >= 5)
+        if (tiempo >= 7)
         {
             GameObject go = Instantiate(murcielago, canon.transform.position, canon.transform.rotation);
 
             Destroy(go, 10f);
-            tiempo = 0;
+            tiempo = -35;
         }
     }
 }
