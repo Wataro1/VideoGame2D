@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spawraton: MonoBehaviour
+public class SpawJefe : MonoBehaviour
 {
     public float tiempo;
     public Transform canon;
@@ -19,17 +19,17 @@ public class Spawraton: MonoBehaviour
     void Update()
     {
         tiempo = tiempo + Time.deltaTime;
-        if (tiempo >= 12)
+        if (tiempo >= 138)
         {
             GameObject go = Instantiate(murcielago, canon.transform.position, canon.transform.rotation);
             tiempo = 0;
-            Destroy(go, 20f);
+            Destroy(go, 30f);
 
         }
         tiempo2 = tiempo2 + Time.deltaTime;
-        if (tiempo2 >= 136)
+        if (tiempo2 >= 170)
         {
-            gameObject.SetActive(false);
+            gameObject.SetActive(false); 
         }
     }
 }

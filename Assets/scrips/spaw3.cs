@@ -8,6 +8,7 @@ public class spaw3 : MonoBehaviour
     public Transform canon;
     public GameObject murcielago;
     public Mv movement;
+    public float tiempo2;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +26,11 @@ public class spaw3 : MonoBehaviour
             Destroy(go, 20f);
 
         }
-      
-       
+
+        tiempo2 = tiempo2 + Time.deltaTime;
+        if (tiempo2 >= 136)
+        {
+            gameObject.SetActive(false);
+        }
     }
 }

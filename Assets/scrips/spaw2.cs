@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class spaw2 : MonoBehaviour
 {
-    public float tiempo;
+    public float tiempo = 0;
     public Transform canon;
     public GameObject murcielago;
+    public float tiempo2 = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,11 @@ public class spaw2 : MonoBehaviour
 
             Destroy(go, 10f);
             tiempo = -35;
+        }
+        tiempo2 = tiempo2 + Time.deltaTime;
+        if (tiempo2 >= 136)
+        {
+            gameObject.SetActive(false);
         }
     }
 }
