@@ -22,7 +22,7 @@ public class spaw2 : MonoBehaviour
         {
             GameObject go = Instantiate(murcielago, canon.transform.position, canon.transform.rotation);
 
-            Destroy(go, 10f);
+            Destroy(go, 40f);
             tiempo = -35;
         }
         tiempo2 = tiempo2 + Time.deltaTime;

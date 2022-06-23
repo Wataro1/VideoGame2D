@@ -27,20 +27,20 @@ public class rato2 : MonoBehaviour
         }
         if (tiempo >= 2)
         {
-            movement.Move(0,-1);
+            movement.Move(-1,0);
         }
         if (tiempo >= 3)
         {
-            movement.Move(-1, 0);
+            movement.Move(0, -1);
         }
         if (tiempo >= 4)
         {
-            movement.Move(0, 1);
+            movement.Move(-1, 0);
             
         }
         if(tiempo >=5)
         {
-            movement.Move(-1, 0);
+            movement.Move(0, 1);
             tiempo = 0;
         }
     }

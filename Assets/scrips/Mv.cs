@@ -6,8 +6,9 @@ public class Mv : MonoBehaviour
 {//movimiento del enemigo
     public float spedMovement;
     public Vector2 direcion;
-    
-    
+    public float tiempo;
+
+ 
     void Start()
     {
         
@@ -29,6 +30,7 @@ public class Mv : MonoBehaviour
     }
     private void OnMouseDown()
     {
+        
         gameObject.SetActive(false);
     }
 }

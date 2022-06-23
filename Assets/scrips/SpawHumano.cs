@@ -19,7 +19,7 @@ public class SpawHumano : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        numero = Random.Range(-3f, 4f);
+        numero = Random.Range(-2f, 3f);
 
         tiempo = tiempo + Time.deltaTime;
         if (tiempo >= 2)
@@ -28,8 +28,8 @@ public class SpawHumano : MonoBehaviour
             posicion.x = numero;
             GameObject go = Instantiate(murcielago,posicion, transform.rotation);
 
-            Destroy(go, 10f);
-            tiempo = 0;
+            Destroy(go, 30f);
+            tiempo = -4;
         }
         tiempo2 = tiempo2 + Time.deltaTime;
         if (tiempo2 >= 136)

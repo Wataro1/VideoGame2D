@@ -19,7 +19,7 @@ public class MVHU : MonoBehaviour
     {
 
     }
-    public void Move(float Vertical, float Horizontal)
+    public void Mo(float Vertical, float Horizontal)
     {
 
         direcion.x = Horizontal;

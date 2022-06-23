@@ -5,23 +5,29 @@ using UnityEngine;
 public class spaw : MonoBehaviour
 {
     // Respaw del enemigo
-    public Transform canon;
+ 
     public GameObject murcielago;
     public float tiempo = 0;
     public float tiempo2 = 0;
-   
+    Vector3 posicion;
+    public float numero;
+
     // Update is called once per frame
-     void Update()
+    void Update()
      {
-        
+        numero = Random.Range(-2f, 3f);
         // respaw cada cierto tiempo 
         tiempo = tiempo + Time.deltaTime;
-        if (tiempo >=2)
+        if (tiempo >=1)
         {
-            GameObject go = Instantiate(murcielago, canon.transform.position, canon.transform.rotation);
-            
+           
+            posicion = transform.position;
+            posicion.x = numero;
+            GameObject go = Instantiate(murcielago, posicion, transform.rotation);
+
+
             Destroy(go, 10f);
-            tiempo = 0;
+            tiempo = -2;
         }
         tiempo2 = tiempo2 + Time.deltaTime;
         if(tiempo2>=136)

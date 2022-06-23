@@ -18,6 +18,6 @@ public class Humano : MonoBehaviour
     {
         distance = Vector3.Distance(transform.position, jugador.position);
 
-        movement.Move(-1, 0);
+        movement.Mo(-1, 0);
     }
 }
